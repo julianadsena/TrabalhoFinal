@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>749</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>522422</width>
+    <height>1603</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 85, 127);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_11">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_25"/>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_10">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="btn_home">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+          </property>
+          <property name="text">
+           <string>Home</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_contato">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+          </property>
+          <property name="text">
+           <string>Importar</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_tables">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+          </property>
+          <property name="text">
+           <string>Planilha</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_sobre">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+          </property>
+          <property name="text">
+           <string>Sobre</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_outro">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+          </property>
+          <property name="text">
+           <string>Novo atendimento</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="Pages">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>729</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 170, 255);</string>
+        </property>
+        <property name="currentIndex">
+         <number>5</number>
+        </property>
+        <widget class="QWidget" name="pg_home">
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(170, 170, 255);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Sistema de Controle de Atendimento &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:600; color:#55007f;&quot;&gt;CATEQ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-colorrgb(0, 85, 127);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+            </property>
+            <property name="text">
+             <string>Cadastrar Novo Usuário</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="pg_tables">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QTabWidget" name="Base">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tables">
+             <attribute name="title">
+              <string>Base</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <item>
+                   <widget class="QLineEdit" name="txt_file"/>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="btn_open">
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+                    </property>
+                    <property name="text">
+                     <string>Abrir </string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <item>
+                   <layout class="QVBoxLayout" name="tb_Estoque">
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Gestão dos atendimentos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTreeWidget" name="tw_estoque">
+                      <property name="frameShape">
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <column>
+                       <property name="text">
+                        <string>Data</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Nome</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>PIS/PASEP/CPF/CNPJ</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Nº Documento</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Ambiente</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Tipo</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Atendente</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>CBO</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Tarefa</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Resultado</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Motivo se não encaminhado</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Usuário</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>PCD</string>
+                       </property>
+                      </column>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+                      </property>
+                      <property name="text">
+                       <string>Cadastrar Novo Atendimento</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_3">
+                    <item>
+                     <widget class="QPushButton" name="btn_importar">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:10px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+                      </property>
+                      <property name="text">
+                       <string>Importar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btn_gerar">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:10px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+                      </property>
+                      <property name="text">
+                       <string>Gerar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_8">
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:10px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+                      </property>
+                      <property name="text">
+                       <string>Procurar</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="verticalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>1</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt;Sistema de Controle de Atendimento &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:600; color:#55007f;&quot;&gt;CATEQ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Tela para cadastro &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0, 0, 0);
+</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;1&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Cadastro de Atendente&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-size:21px;</string>
+              </property>
+              <property name="text">
+               <string>Nome</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_nome">
+              <property name="styleSheet">
+               <string notr="true">color: rgba(211,239,251,1);
+border-bottom: 1px solid white;
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-family:Trebuchet MS;
+font-size:21px;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-size:21px;</string>
+              </property>
+              <property name="text">
+               <string>Usuário</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_usuario">
+              <property name="styleSheet">
+               <string notr="true">color: rgba(211,239,251,1);
+border-bottom: 1px solid white;
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-family:Trebuchet MS;
+font-size:21px;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-size:21px;</string>
+              </property>
+              <property name="text">
+               <string>Senha</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_senha">
+              <property name="styleSheet">
+               <string notr="true">color: rgba(211,239,251,1);
+border-bottom: 1px solid white;
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-family:Trebuchet MS;
+font-size:21px;</string>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-size:21px;</string>
+              </property>
+              <property name="text">
+               <string>Nova Senha</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_novasenha">
+              <property name="styleSheet">
+               <string notr="true">color: rgba(211,239,251,1);
+border-bottom: 1px solid white;
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-family:Trebuchet MS;
+font-size:21px;</string>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-size:21px;</string>
+              </property>
+              <property name="text">
+               <string>Perfil do usuario</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cb_perfil">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0, 0, 0);
+border-bottom: 1px solid white;
+border-radius:None;
+background-color:rgba(85,115,155,0.1);
+font-family:Trebuchet MS;
+font-size:21px;</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Atendente</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Administrador</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="font">
+               <font>
+                <pointsize>-1</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 2px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+              </property>
+              <property name="text">
+               <string>Cadastrar</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>711</width>
+            <height>461</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(170, 170, 255);</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:600;&quot;&gt;Atendimento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_24">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>Data</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>Nome</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_2"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <widget class="QLabel" name="label_16">
+                   <property name="text">
+                    <string>PCD</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_8">
+                   <item>
+                    <property name="text">
+                     <string>Sim</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Não</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QLabel" name="label_17">
+                   <property name="text">
+                    <string>Pis/Pasep/CPF/CNPJ</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_6">
+                   <item>
+                    <property name="text">
+                     <string>PIS/PASEP</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CPF</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CNPJ</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <item>
+                  <widget class="QLabel" name="label_25">
+                   <property name="text">
+                    <string>Nº Doc.</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_3"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_16">
+                 <item>
+                  <widget class="QLabel" name="label_18">
+                   <property name="text">
+                    <string>Ambiente</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_7">
+                   <item>
+                    <property name="text">
+                     <string>SINE</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>NO MEU BAIRRO</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>EMPREENDEDORES</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>QUALIFICAÇÃO</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>E-MAIL</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CEARA CREDI</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_19">
+                 <item>
+                  <widget class="QLabel" name="label_19">
+                   <property name="text">
+                    <string>Atendente</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_6"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_17">
+                 <item>
+                  <widget class="QLabel" name="label_21">
+                   <property name="text">
+                    <string>CBO</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_2">
+                   <item>
+                    <property name="text">
+                     <string>Para adicionar</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_22">
+                 <item>
+                  <widget class="QLabel" name="label_24">
+                   <property name="text">
+                    <string>Resultado</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_5">
+                   <item>
+                    <property name="text">
+                     <string>Encaminhado</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Não Encaminhado</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Baixa em encaminhamento</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Orientado</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Habilitado</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Acerto Feito</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Encaminhado MTE</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Pré-Seleção</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Emitido</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Realizado</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Emitida/Impressa</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Formalizado</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Enc. para Auditório</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Enc. para Empreendedorismo</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Enc. Prosperar</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_21">
+                 <item>
+                  <widget class="QLabel" name="label_23">
+                   <property name="text">
+                    <string>Motivo se não encaminhado</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_4">
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Escolaridade</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Sem experiência na função</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Recusa do trabalhador</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Mora distante da empresa</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Sexo</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PCD</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Sem vaga no perfil</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_18">
+                 <item>
+                  <widget class="QLabel" name="label_20">
+                   <property name="text">
+                    <string>Tipo</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox">
+                   <item>
+                    <property name="text">
+                     <string>IMO</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>SD FORM.</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>SD JUST.</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Convocação</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MEI</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Cursos</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Jovem Aprendiz</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>Ceara Credi</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_20">
+                 <item>
+                  <widget class="QLabel" name="label_22">
+                   <property name="text">
+                    <string>Tarefa</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_3">
+                   <item>
+                    <property name="text">
+                     <string>IMO - ALTERAÇÃO DE CADASTRO</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>IMO - CONSULTA DE VAGAS</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>IMO - PRÉ-SELEÇÃO</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CONSULTA - SD</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>HABILITAÇÃO - SD</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ACERTOS -SD</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ORIENTAÇÃO - SD</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ALT.CADASTRAL - MEI</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>BOLETOS - MEI</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>DECLARAÇÃO - MEI </string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>FORMALIZAÇÃO - MEI</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>BAIXA - MEI</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PARCELAMENTO - MEI</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>QUALIFICAÇÃO</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CONSULTORIA</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>OFICINAS</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>EVENTOS</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CONVOCAÇÃO</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_23">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetFixedSize</enum>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_26">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_4">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+               </property>
+               <property name="text">
+                <string>Criar atendimento</string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_27">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_3">
+         <widget class="QLabel" name="label_28">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>30</y>
+            <width>401</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-color:rgb(255, 255, 255)</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#000000;&quot;&gt;Importar XML&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_4">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>190</y>
+            <width>351</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>190</y>
+            <width>191</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 12px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+          </property>
+          <property name="text">
+           <string>Abrir</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>300</y>
+            <width>261</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+color:rgb(0, 0, 0);
+border-radius: 1px;
+font-size:14px;
+background-color: rgb(170, 170, 255);}
+QPushButton:hover{background-color:#fff;color:black}</string>
+          </property>
+          <property name="text">
+           <string>Importar</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_4">
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>711</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#000000;&quot;&gt;Sistema desenvolvido para controle &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#000000;&quot;&gt;de atendimento no CATEQ&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#000000;&quot;&gt;Desenvolvedoras: Geângela e Juliana&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
