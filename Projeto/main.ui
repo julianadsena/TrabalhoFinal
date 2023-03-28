@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 127);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+ border: none
+}
+
+QLabel{
+	color: rgb(255,255,255);
+}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="left_container">
+      <property name="maximumSize">
+       <size>
+        <width>9</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="cursor">
+          <cursorShape>SizeVerCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+	background-color:#E6E6FA;
+}
+QToolBox{
+	text-align:left;
+	background-color:#E6E6FA;	
+}
+QToolBox::tab{
+	border-radius: 5px;
+	background-color:#E6E6FA;
+	text-align:left;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QToolBox" name="toolBox">
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{
+color:black;
+	background-color:#E6E6FA;
+	border-radius: 5px;
+    padding: 5px 10px;
+}
+QPushButton{
+	color:rgb(255,255,255);
+   border-radius: 5px;
+    padding: 5px 10px;
+}
+</string>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>16</width>
+               <height>465</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>Opções</string>
+             </attribute>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>-11</x>
+                <y>9</y>
+                <width>191</width>
+                <height>132</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QPushButton" name="btn_atendimento">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>Atendimento</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_grafico">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="text">
+                  <string>Gráficos</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_sobre">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="text">
+                  <string>Sobre</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_usuario">
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>Novo Usuário</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>65</width>
+               <height>465</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>Informações</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="styleSheet">
+                 <string notr="true">color: black</string>
+                </property>
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main_container">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="top_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+            </property>
+            <property name="text">
+             <string>Menu</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+            </property>
+            <property name="text">
+             <string>Home</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Sistema de Controle de Agendamento&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="main_framer">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_17" stretch="0">
+          <property name="spacing">
+           <number>9</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="Pages">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="pg_home">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_5">
+                <property name="styleSheet">
+                 <string notr="true">
+background-color: rgb(0, 0, 127);</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/img/img/cateq2023.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_atendim">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QTabWidget" name="tabWidget">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab">
+                 <attribute name="title">
+                  <string>Novo Atendimento</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_11">
+                  <item>
+                   <widget class="QLabel" name="label_7">
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;Cadastro&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_4">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout">
+                     <item row="1" column="0" colspan="2" alignment="Qt::AlignVCenter">
+                      <widget class="QLineEdit" name="txt_data">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Data</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="3">
+                      <widget class="QLineEdit" name="txt_pcd">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>PCD</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLineEdit" name="txt_tipo">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Tipo de Atendimento</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="0">
+                      <widget class="QLineEdit" name="txt_tarefa">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Tarefa Realizada</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLineEdit" name="txt_atendente">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Atendente</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0" colspan="2">
+                      <widget class="QLineEdit" name="txt_amb">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Ambiente de Atendimento</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="2">
+                      <widget class="QLineEdit" name="txt_cpf">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>PIS/PASEP/CPF/CNPJ</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="2" colspan="2">
+                      <widget class="QLineEdit" name="txt_doc">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nº Documento</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="2" colspan="2">
+                      <widget class="QLineEdit" name="txt_cbo">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>CBO</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="2">
+                      <widget class="QLineEdit" name="txt_resultado">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Resultado</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="3">
+                      <widget class="QLineEdit" name="txt_motivo">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Motivo se não encaminhado</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="2" colspan="2" alignment="Qt::AlignVCenter">
+                      <widget class="QLineEdit" name="txt_nome">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nome</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_7">
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+    background-color: red;
+    color: white;
+	border-radius: 20px;
+	font-size:15px;
+border-radius: 5px;
+    padding: 5px 10px;
+
+}
+
+QPushButton:hover {
+    background-color: green;
+    color: white;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>Cadastrar</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_2">
+                 <attribute name="title">
+                  <string>Controle de Atendimentos</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_9">
+                    <item>
+                     <widget class="QLabel" name="label_6">
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; text-decoration: underline; color:#000000;&quot;&gt;Atendimentos realizados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_6">
+                      <item>
+                       <widget class="QTableWidget" name="tableWidget">
+                        <property name="styleSheet">
+                         <string notr="true">QTableView {
+    color: black;
+    background-color: #E6E6FA;
+}
+
+QTableView::item:hover {
+    background-color: black;
+    color: white;
+}
+QHeaderView::section {
+    background-color: #E6E6FA;
+}</string>
+                        </property>
+                        <column>
+                         <property name="text">
+                          <string>Atendente</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Data</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Nome</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>PIS/PASEP/CPF/CNPJ</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Nº Documento</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>PCD</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Ambiente de Atendimento</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Tipo de Atendimento</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Tarefa realizada</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Principal Pretensão Profissional (CBO)</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Resultado</string>
+                         </property>
+                        </column>
+                        <column>
+                         <property name="text">
+                          <string>Motivo se não encaminhado</string>
+                         </property>
+                        </column>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="frame_3">
+                        <property name="styleSheet">
+                         <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_8">
+                         <item>
+                          <widget class="QPushButton" name="btn_excel">
+                           <property name="styleSheet">
+                            <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Gerar Excel</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_alterar">
+                           <property name="styleSheet">
+                            <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Alterar</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_excluir">
+                           <property name="styleSheet">
+                            <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Excluir</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_procurar">
+                           <property name="styleSheet">
+                            <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Procurar</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <spacer name="verticalSpacer_2">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_usuario">
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QTabWidget" name="tabWidget_2">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab_3">
+                 <attribute name="title">
+                  <string>Cadastro</string>
+                 </attribute>
+                 <widget class="QFrame" name="frame_6">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>30</y>
+                    <width>461</width>
+                    <height>361</height>
+                   </rect>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                 </widget>
+                 <widget class="QWidget" name="layoutWidget">
+                  <property name="geometry">
+                   <rect>
+                    <x>60</x>
+                    <y>40</y>
+                    <width>542</width>
+                    <height>361</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_15">
+                   <item>
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600;&quot;&gt;Cadastrar Usuário&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QGridLayout" name="gridLayout_2">
+                     <item row="0" column="0">
+                      <widget class="QLineEdit" name="txt_nome_2">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Nome</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QComboBox" name="cb_perfil">
+                       <property name="styleSheet">
+                        <string notr="true">
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+</string>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Administrador</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Atendente</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="txt_senha1">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Confirmar senha</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLineEdit" name="txt_usuario">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Usuário</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLineEdit" name="txt_senha">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Senha</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QLineEdit" name="txt_data_2">
+                       <property name="styleSheet">
+                        <string notr="true">QLineEdit {
+    background-color: #E6E6FA; /*cor lilás claro*/
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    font-size: 10pt; /*tamanho da fonte*/
+}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="placeholderText">
+                        <string>Data</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="btn_cadastrar">
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton {
+    background-color: red;
+    color: white;
+	border-radius: 20px;
+	font-size:15px;
+border-radius: 5px;
+    padding: 5px 10px;
+
+}
+
+QPushButton:hover {
+    background-color: green;
+    color: white;
+}
+</string>
+                     </property>
+                     <property name="text">
+                      <string>Cadastrar</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="tab_4">
+                 <attribute name="title">
+                  <string>Usuários</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QFrame" name="frame_5">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_14">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_8">
+                       <item>
+                        <widget class="QTableWidget" name="tableWidget_2">
+                         <property name="styleSheet">
+                          <string notr="true">QTableView {
+    color: black;
+    background-color: #E6E6FA;
+}
+
+QTableView::item:hover {
+    background-color: black;
+    color: white;
+}
+QHeaderView::section {
+    background-color: #E6E6FA;
+}
+QScrollBar:horizontal {
+    border: none;
+    background: none;
+    height: 14px;
+    margin: 0 15px 0 15px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #DBB1EA;
+    min-width: 30px;
+    border-radius: 7px;
+}
+
+QScrollBar::add-line:horizontal {
+    border: none;
+    background: none;
+    width: 15px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+    width: 15px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    border: none;
+    width: 0px;
+    height: 0px;
+    background: none;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+}
+QScrollBar::handle:horizontal {
+    background: #DBB1EA;
+    min-width: 30px;
+    border-radius: 7px;
+}</string>
+                         </property>
+                         <column>
+                          <property name="text">
+                           <string>Usuario</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Data</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Nome</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Senha</string>
+                          </property>
+                         </column>
+                         <column>
+                          <property name="text">
+                           <string>Confirmar senha</string>
+                          </property>
+                         </column>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_12">
+                         <item>
+                          <widget class="QPushButton" name="btn_procurar_2">
+                           <property name="styleSheet">
+                            <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Procurar</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_editar">
+                           <property name="styleSheet">
+                            <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Editar</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_adicionar">
+                           <property name="styleSheet">
+                            <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Adicionar</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="btn_excluir_2">
+                           <property name="styleSheet">
+                            <string notr="true"> 
+QPushButton {
+    color: black;
+    background-color: #E6E6FA;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    color: white;
+    background-color: green;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Excluir</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <spacer name="verticalSpacer_3">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_sobre"/>
+            <widget class="QWidget" name="pg_contato">
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <item>
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Projeto elaborado para o Projeto Ninho de Desenvolvedores no CATEQ&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Desenvolvedores: Juliana e Geângela&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="footer_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Sistema de Controle de Agendamento&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="img_.qrc"/>
+ </resources>
+ <connections/>
+</ui>
